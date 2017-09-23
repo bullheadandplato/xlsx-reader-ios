@@ -56,6 +56,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Microsoft M365 Advisor" id="Nb2-Sb-PaE"/>
+                    <connections>
+                        <outlet property="containerView" destination="dFF-t8-P1p" id="Hcs-rX-3zd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="5xa-KX-nCC" customClass="HomeTableCell" customModule="IosGoogling" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
@@ -82,6 +86,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXJ-1s-gen">
                                                     <rect key="frame" x="0.0" y="0.0" width="305" height="49.5"/>
+                                                    <color key="backgroundColor" red="0.5878699422" green="0.81248700620000003" blue="0.59000819920000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -94,6 +99,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </stackView>
                                     </subviews>
                                     <constraints>
@@ -103,7 +109,7 @@
                                         <constraint firstItem="874-bM-bvU" firstAttribute="height" secondItem="m36-Hm-wk3" secondAttribute="height" id="vhr-ee-gqJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.2491900622844696" green="0.63991189002990723" blue="0.24708741903305054" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5878699422" green="0.81248700620000003" blue="0.59000819920000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="title" destination="UXJ-1s-gen" id="7ZX-Nz-0r1"/>
                                 </connections>

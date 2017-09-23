@@ -23,7 +23,7 @@ class HomeTableViewController: UITableViewController {
         }
         let title=meals[indexPath.item];
         cell.title.text=title
-        tableView.rowHeight=70;
+        tableView.rowHeight=70;    
         return cell;
     }
     
