@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A20AB381F76359E00A4757D /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20AB371F76359E00A4757D /* DataHandler.swift */; };
+		4A20AB3A1F76401D00A4757D /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20AB391F76401D00A4757D /* CommonConstants.swift */; };
+		4A20AB4B1F764FEB00A4757D /* libXlsxReaderWriter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A20AB431F764F4000A4757D /* libXlsxReaderWriter.a */; };
+		4A20AB4D1F764FF800A4757D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A20AB4C1F764FF800A4757D /* libz.tbd */; };
 		4A78006E1F71C05F009BCC9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78006D1F71C05F009BCC9E /* AppDelegate.swift */; };
 		4A7800701F71C05F009BCC9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78006F1F71C05F009BCC9E /* ViewController.swift */; };
 		4A7800731F71C05F009BCC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7800711F71C05F009BCC9E /* Main.storyboard */; };
@@ -19,6 +23,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A20AB421F764F4000A4757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45B6E23A1A148F7500288A78;
+			remoteInfo = XlsxReaderWriter;
+		};
+		4A20AB441F764F4000A4757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45B6E2451A148F7500288A78;
+			remoteInfo = XlsxReaderWriterTests;
+		};
+		4A20AB461F764F4000A4757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22156D581C46B42500BB5779;
+			remoteInfo = "XlsxReaderWriter Mac";
+		};
+		4A20AB481F764F9300A4757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B6E2391A148F7500288A78;
+			remoteInfo = XlsxReaderWriter;
+		};
 		4A78007F1F71C060009BCC9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A7800621F71C05F009BCC9E /* Project object */;
@@ -36,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A20AB371F76359E00A4757D /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		4A20AB391F76401D00A4757D /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XlsxReaderWriter.xcodeproj; path = XlsxHandler/XlsxReaderWriter.xcodeproj; sourceTree = "<group>"; };
+		4A20AB4C1F764FF800A4757D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4A20AB4E1F7652DB00A4757D /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		4A78006A1F71C05F009BCC9E /* IosGoogling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosGoogling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A78006D1F71C05F009BCC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A78006F1F71C05F009BCC9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A20AB4D1F764FF800A4757D /* libz.tbd in Frameworks */,
+				4A20AB4B1F764FEB00A4757D /* libXlsxReaderWriter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +117,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A20AB3C1F764F4000A4757D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A20AB431F764F4000A4757D /* libXlsxReaderWriter.a */,
+				4A20AB451F764F4000A4757D /* XlsxReaderWriterTests.xctest */,
+				4A20AB471F764F4000A4757D /* XlsxReaderWriter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A20AB4A1F764FEB00A4757D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A20AB4C1F764FF800A4757D /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A7800611F71C05F009BCC9E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +142,8 @@
 				4A7800811F71C060009BCC9E /* IosGooglingTests */,
 				4A78008C1F71C060009BCC9E /* IosGooglingUITests */,
 				4A78006B1F71C05F009BCC9E /* Products */,
+				4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */,
+				4A20AB4A1F764FEB00A4757D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +168,9 @@
 				4A7800761F71C05F009BCC9E /* LaunchScreen.storyboard */,
 				4A7800791F71C05F009BCC9E /* Info.plist */,
 				4A92026C1F7548770043BF73 /* HomeTableCell.swift */,
+				4A20AB371F76359E00A4757D /* DataHandler.swift */,
+				4A20AB391F76401D00A4757D /* CommonConstants.swift */,
+				4A20AB4E1F7652DB00A4757D /* BridgeHeader.h */,
 			);
 			path = IosGoogling;
 			sourceTree = "<group>";
@@ -145,6 +207,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A20AB491F764F9300A4757D /* PBXTargetDependency */,
 			);
 			name = IosGoogling;
 			productName = IosGoogling;
@@ -224,6 +287,12 @@
 			mainGroup = 4A7800611F71C05F009BCC9E;
 			productRefGroup = 4A78006B1F71C05F009BCC9E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A20AB3C1F764F4000A4757D /* Products */;
+					ProjectRef = 4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4A7800691F71C05F009BCC9E /* IosGoogling */,
@@ -232,6 +301,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A20AB431F764F4000A4757D /* libXlsxReaderWriter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXlsxReaderWriter.a;
+			remoteRef = 4A20AB421F764F4000A4757D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A20AB451F764F4000A4757D /* XlsxReaderWriterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XlsxReaderWriterTests.xctest;
+			remoteRef = 4A20AB441F764F4000A4757D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A20AB471F764F4000A4757D /* XlsxReaderWriter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XlsxReaderWriter.framework;
+			remoteRef = 4A20AB461F764F4000A4757D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4A7800681F71C05F009BCC9E /* Resources */ = {
@@ -269,6 +362,8 @@
 				4A7800701F71C05F009BCC9E /* ViewController.swift in Sources */,
 				4A78006E1F71C05F009BCC9E /* AppDelegate.swift in Sources */,
 				4A92026D1F7548770043BF73 /* HomeTableCell.swift in Sources */,
+				4A20AB3A1F76401D00A4757D /* CommonConstants.swift in Sources */,
+				4A20AB381F76359E00A4757D /* DataHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +386,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A20AB491F764F9300A4757D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XlsxReaderWriter;
+			targetProxy = 4A20AB481F764F9300A4757D /* PBXContainerItemProxy */;
+		};
 		4A7800801F71C060009BCC9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4A7800691F71C05F009BCC9E /* IosGoogling */;
@@ -438,10 +538,13 @@
 				DEVELOPMENT_TEAM = 5YTYK347V6;
 				INFOPLIST_FILE = IosGoogling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullhead.IosGoogling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = IosGoogling/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxHandler/**";
 			};
 			name = Debug;
 		};
@@ -453,10 +556,13 @@
 				DEVELOPMENT_TEAM = 5YTYK347V6;
 				INFOPLIST_FILE = IosGoogling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullhead.IosGoogling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = IosGoogling/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxHandler/**";
 			};
 			name = Release;
 		};

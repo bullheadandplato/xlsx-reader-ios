@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        containerView.layoutMargins=UIEdgeInsets.init(top: 20, left: 20, bottom: 20, right: 20);
+        DataHandler.loadData();
     }
 
     @IBOutlet weak var containerView: UIView!
