@@ -9,4 +9,5 @@
 import Foundation
 class CommonConstants{
     public static let FILENAME="data.xls";
+    public static let URL="https://onedrive.live.com/download/view.aspx?resid=F04A84FECFFF888B!84898&ithint=file%2cxlsx&app=Excel&authkey=!ALqZklZ00KuGO8A";
 }

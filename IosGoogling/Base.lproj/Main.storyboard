@@ -25,7 +25,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFF-t8-P1p">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <connections>
-                                    <segue destination="TQ5-15-8vU" kind="embed" id="axN-l9-Nvz"/>
+                                    <segue destination="TQ5-15-8vU" kind="embed" identifier="tableViewSegue" id="axN-l9-Nvz"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -57,7 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Microsoft M365 Advisor" id="Nb2-Sb-PaE"/>
                     <connections>
-                        <outlet property="containerView" destination="dFF-t8-P1p" id="Hcs-rX-3zd"/>
+                        <outlet property="containerView" destination="dFF-t8-P1p" id="JH2-8U-NUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

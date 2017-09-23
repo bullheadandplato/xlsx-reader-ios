@@ -8,8 +8,8 @@
 
 import Foundation
 class DataHandler {
-    public static func loadData(){
-        let url=NSURL.init(string:"https://onedrive.live.com/view.aspx?resid=F04A84FECFFF888B!84898&ithint=file%2cxlsx&app=Excel&authkey=!ALqZklZ00KuGO8A");
+    public static func loadData(completion:@escaping ([String])->()){
+        let url=NSURL.init(string: CommonConstants.URL);
         if let dir=FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
         
             let outPath=dir.appendingPathComponent(CommonConstants.FILENAME);
@@ -24,15 +24,18 @@ class DataHandler {
             }
             //download file
             Downloader.load(url: url! as URL, to: outPath, completion: {
-            
-                do{
-                    let text=try String.init(contentsOf: outPath)
-                    var spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
-                
-                    print(text)
-                }catch{
-                    print("Fucked!!!!")
+                let spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
+                let workSheet : BRAWorksheet=spreadsheet.workbook.worksheets?[0] as! BRAWorksheet;
+                var temp:[String]=[String()];
+                for row in workSheet.rows as! [BRARow]{
+                    let cell:BRACell=row.cells?[0] as! BRACell
+                    if(cell.stringValue()=="C"){
+                        let cell1:BRACell=row.cells?[1] as! BRACell
+                        temp.append(cell1.stringValue())
+                    }
                 }
+                completion(temp)
+                
             })
         }
     }

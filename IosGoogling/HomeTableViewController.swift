@@ -26,5 +26,9 @@ class HomeTableViewController: UITableViewController {
         tableView.rowHeight=70;    
         return cell;
     }
+    public func setData(values:[String]){
+        self.meals=values
+        self.tableView.reloadData()
+    }
     
 }
