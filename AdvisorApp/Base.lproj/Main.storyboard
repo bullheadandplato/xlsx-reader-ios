@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +14,7 @@
         <!--Microsoft M365 Advisor-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IosGoogling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="M365_Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,12 +63,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-418.39999999999998" y="38.23088455772114"/>
+            <point key="canvasLocation" x="-335" y="27"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="5YU-uB-oAV">
             <objects>
-                <tableViewController id="TQ5-15-8vU" customClass="HomeTableViewController" customModule="IosGoogling" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TQ5-15-8vU" customClass="HomeTableViewController" customModule="M365_Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BBC-ga-LTe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +77,7 @@
                         <color key="separatorColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="5xa-KX-nCC" customClass="HomeTableCell" customModule="IosGoogling" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="5xa-KX-nCC" customClass="HomeTableCell" customModule="M365_Advisor" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5xa-KX-nCC" id="m36-Hm-wk3">
@@ -133,18 +134,33 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPt-zi-n0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="484"/>
+            <point key="canvasLocation" x="494" y="27"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="Rlj-ct-UOe">
+            <objects>
+                <viewController title="Details" modalTransitionStyle="flipHorizontal" id="iX5-3g-YYd" customClass="DetailViewController" customModule="M365_Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gj-Vy-NWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Usv-r8-JgF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTd-jQ-e6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="182"/>
         </scene>
         <!--Home Detail Controller-->
         <scene sceneID="hlM-7d-cew">
             <objects>
-                <tableViewController id="eTT-dh-vVB" customClass="HomeDetailController" customModule="IosGoogling" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="eTT-dh-vVB" customClass="HomeDetailController" customModule="M365_Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lbY-8J-w59">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDetailCell" rowHeight="50" id="Yub-Me-0zg" customClass="DetailTableCell" customModule="IosGoogling" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDetailCell" rowHeight="50" id="Yub-Me-0zg" customClass="DetailTableCell" customModule="M365_Advisor" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yub-Me-0zg" id="the-QO-AE3">
@@ -196,6 +212,7 @@
                                 <connections>
                                     <outlet property="detailDescription" destination="btx-FP-iD1" id="ui8-wh-cSV"/>
                                     <outlet property="detailTitle" destination="Ggd-HK-EE7" id="U3N-Ip-dTr"/>
+                                    <segue destination="iX5-3g-YYd" kind="show" id="wbr-X6-vSx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -207,7 +224,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmj-lI-Z79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="-203"/>
+            <point key="canvasLocation" x="494" y="693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uYh-E9-JOd">

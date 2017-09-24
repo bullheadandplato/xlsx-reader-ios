@@ -13,6 +13,7 @@
 		4A20AB4D1F764FF800A4757D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A20AB4C1F764FF800A4757D /* libz.tbd */; };
 		4A5281E31F779F0D00414DC5 /* HomeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5281E21F779F0D00414DC5 /* HomeDetailController.swift */; };
 		4A5281E51F779F8900414DC5 /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5281E41F779F8900414DC5 /* DetailTableCell.swift */; };
+		4A5281EB1F78073800414DC5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5281EA1F78073800414DC5 /* DetailViewController.swift */; };
 		4A78006E1F71C05F009BCC9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78006D1F71C05F009BCC9E /* AppDelegate.swift */; };
 		4A7800701F71C05F009BCC9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78006F1F71C05F009BCC9E /* ViewController.swift */; };
 		4A7800731F71C05F009BCC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7800711F71C05F009BCC9E /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		4A20AB4E1F7652DB00A4757D /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		4A5281E21F779F0D00414DC5 /* HomeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailController.swift; sourceTree = "<group>"; };
 		4A5281E41F779F8900414DC5 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
+		4A5281EA1F78073800414DC5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4A78006A1F71C05F009BCC9E /* M365 Advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M365 Advisor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A78006D1F71C05F009BCC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A78006F1F71C05F009BCC9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				4A20AB4E1F7652DB00A4757D /* BridgeHeader.h */,
 				4A5281E21F779F0D00414DC5 /* HomeDetailController.swift */,
 				4A5281E41F779F8900414DC5 /* DetailTableCell.swift */,
+				4A5281EA1F78073800414DC5 /* DetailViewController.swift */,
 			);
 			path = AdvisorApp;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5281EB1F78073800414DC5 /* DetailViewController.swift in Sources */,
 				4A92026F1F754FF60043BF73 /* HomeTableViewController.swift in Sources */,
 				4A5281E31F779F0D00414DC5 /* HomeDetailController.swift in Sources */,
 				4A7800701F71C05F009BCC9E /* ViewController.swift in Sources */,

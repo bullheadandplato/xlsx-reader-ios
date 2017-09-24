@@ -13,6 +13,7 @@ class HomeDetailController: UITableViewController {
     private var descriptions=[String()]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title=detailTitle
         DataHandler.loadDetailData(title: detailTitle!) { response1,response2 in
             self.names=response1
             self.descriptions=response2
