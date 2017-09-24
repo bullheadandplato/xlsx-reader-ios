@@ -13,10 +13,32 @@ class HomeDetailController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title=detailTitle
-        DataHandler.loadDetailData(title: detailTitle!) { response2 in
-            self.data=response2
-            self.tableView.reloadData()
+        
+        //  show loading indicator
+        let alert: UIAlertView = UIAlertView(title: "Loading Data", message: "Please wait...", delegate: nil, cancelButtonTitle: nil);
+        
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x:50,y: 10,width: 37,height: 37)) as UIActivityIndicatorView
+        loadingIndicator.center = self.view.center;
+        loadingIndicator.sizeToFit()
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        
+        alert.setValue(loadingIndicator, forKey: "accessoryView")
+        loadingIndicator.startAnimating()
+        
+        alert.show();
+        
+        DispatchQueue.global(qos: .background).async {
+            DataHandler.loadDetailData(title: self.detailTitle!) { response2 in
+                self.data=response2
+                DispatchQueue.main.async {
+                    alert.dismiss(withClickedButtonIndex: 0, animated: true)
+                    self.tableView.reloadData()
+                }
+            }
         }
+      
     }
     public func setTitle(title:String){
         self.detailTitle=title;
@@ -25,6 +47,9 @@ class HomeDetailController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(data == nil){
+            return 0
+        }
         return data!.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

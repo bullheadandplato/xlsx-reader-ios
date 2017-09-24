@@ -77,19 +77,28 @@ class DataHandler {
                             }*/
                             let name=workSheet.cell(forCellReference: "B\(i)").stringValue()!
                             var url=""
+                            var e3=""
+                            var e5=""
+                            var description="no description provided."
                             if(workSheet.cell(forCellReference: "J\(i)") != nil){
-                            url=workSheet.cell(forCellReference: "J\(i)").stringValue()
+                                url=workSheet.cell(forCellReference: "J\(i)").stringValue()
                             }
-                            let e3=workSheet.cell(forCellReference: "C\(i)").stringValue()!
-                            let e5=workSheet.cell(forCellReference: "D\(i)").stringValue()!
-                            let description=workSheet.cell(forCellReference: "E\(i)").stringValue()!
+                            if(workSheet.cell(forCellReference: "C\(i)") != nil){
+                                e3=workSheet.cell(forCellReference: "C\(i)").stringValue()
+                            }
+                            if(workSheet.cell(forCellReference: "D\(i)") != nil){
+                                e5=workSheet.cell(forCellReference: "D\(i)").stringValue()!
+                            }
+                            if(workSheet.cell(forCellReference: "E\(i)") != nil){
+                                description=workSheet.cell(forCellReference: "E\(i)").stringValue()!
+                            }
                             var ees=""
                             if(e3 != ""){
                                 ees=e3+" and "+e5;
                             }else{
                                 ees=e5
                             }
-                            let cellModel=CellModel.init(title: name, url:url ?? "" , description: description, ees: ees)
+                            let cellModel=CellModel.init(title: name, url:url , description: description, ees: ees)
                         
                             data.insert(cellModel, at: data.count)
                         }
