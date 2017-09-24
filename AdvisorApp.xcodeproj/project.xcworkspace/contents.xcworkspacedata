@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:IosGoogling.xcodeproj">
+      location = "self:/Users/bullhead/XcodeProjects/IosGoogling/AdvisorApp.xcodeproj">
    </FileRef>
 </Workspace>

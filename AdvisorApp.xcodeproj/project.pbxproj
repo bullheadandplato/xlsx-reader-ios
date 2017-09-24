@@ -77,17 +77,17 @@
 		4A20AB4E1F7652DB00A4757D /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		4A5281E21F779F0D00414DC5 /* HomeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailController.swift; sourceTree = "<group>"; };
 		4A5281E41F779F8900414DC5 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
-		4A78006A1F71C05F009BCC9E /* IosGoogling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosGoogling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A78006A1F71C05F009BCC9E /* M365 Advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M365 Advisor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A78006D1F71C05F009BCC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A78006F1F71C05F009BCC9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A7800721F71C05F009BCC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7800741F71C05F009BCC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7800771F71C05F009BCC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7800791F71C05F009BCC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A78007E1F71C060009BCC9E /* IosGooglingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosGooglingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A78007E1F71C060009BCC9E /* AdvisorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvisorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7800821F71C060009BCC9E /* IosGooglingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosGooglingTests.swift; sourceTree = "<group>"; };
 		4A7800841F71C060009BCC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A7800891F71C060009BCC9E /* IosGooglingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosGooglingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7800891F71C060009BCC9E /* AdvisorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvisorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A78008D1F71C060009BCC9E /* IosGooglingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosGooglingUITests.swift; sourceTree = "<group>"; };
 		4A78008F1F71C060009BCC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A92026C1F7548770043BF73 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
@@ -142,9 +142,9 @@
 		4A7800611F71C05F009BCC9E = {
 			isa = PBXGroup;
 			children = (
-				4A78006C1F71C05F009BCC9E /* IosGoogling */,
-				4A7800811F71C060009BCC9E /* IosGooglingTests */,
-				4A78008C1F71C060009BCC9E /* IosGooglingUITests */,
+				4A78006C1F71C05F009BCC9E /* AdvisorApp */,
+				4A7800811F71C060009BCC9E /* AdvisorAppTests */,
+				4A78008C1F71C060009BCC9E /* AdvisorUITests */,
 				4A78006B1F71C05F009BCC9E /* Products */,
 				4A20AB3B1F764F4000A4757D /* XlsxReaderWriter.xcodeproj */,
 				4A20AB4A1F764FEB00A4757D /* Frameworks */,
@@ -154,14 +154,14 @@
 		4A78006B1F71C05F009BCC9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A78006A1F71C05F009BCC9E /* IosGoogling.app */,
-				4A78007E1F71C060009BCC9E /* IosGooglingTests.xctest */,
-				4A7800891F71C060009BCC9E /* IosGooglingUITests.xctest */,
+				4A78006A1F71C05F009BCC9E /* M365 Advisor.app */,
+				4A78007E1F71C060009BCC9E /* AdvisorAppTests.xctest */,
+				4A7800891F71C060009BCC9E /* AdvisorAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A78006C1F71C05F009BCC9E /* IosGoogling */ = {
+		4A78006C1F71C05F009BCC9E /* AdvisorApp */ = {
 			isa = PBXGroup;
 			children = (
 				4A92026E1F754FF60043BF73 /* HomeTableViewController.swift */,
@@ -178,33 +178,33 @@
 				4A5281E21F779F0D00414DC5 /* HomeDetailController.swift */,
 				4A5281E41F779F8900414DC5 /* DetailTableCell.swift */,
 			);
-			path = IosGoogling;
+			path = AdvisorApp;
 			sourceTree = "<group>";
 		};
-		4A7800811F71C060009BCC9E /* IosGooglingTests */ = {
+		4A7800811F71C060009BCC9E /* AdvisorAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				4A7800821F71C060009BCC9E /* IosGooglingTests.swift */,
 				4A7800841F71C060009BCC9E /* Info.plist */,
 			);
-			path = IosGooglingTests;
+			path = AdvisorAppTests;
 			sourceTree = "<group>";
 		};
-		4A78008C1F71C060009BCC9E /* IosGooglingUITests */ = {
+		4A78008C1F71C060009BCC9E /* AdvisorUITests */ = {
 			isa = PBXGroup;
 			children = (
 				4A78008D1F71C060009BCC9E /* IosGooglingUITests.swift */,
 				4A78008F1F71C060009BCC9E /* Info.plist */,
 			);
-			path = IosGooglingUITests;
+			path = AdvisorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A7800691F71C05F009BCC9E /* IosGoogling */ = {
+		4A7800691F71C05F009BCC9E /* AdvisorApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A7800921F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGoogling" */;
+			buildConfigurationList = 4A7800921F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorApp" */;
 			buildPhases = (
 				4A7800661F71C05F009BCC9E /* Sources */,
 				4A7800671F71C05F009BCC9E /* Frameworks */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				4A20AB491F764F9300A4757D /* PBXTargetDependency */,
 			);
-			name = IosGoogling;
+			name = AdvisorApp;
 			productName = IosGoogling;
-			productReference = 4A78006A1F71C05F009BCC9E /* IosGoogling.app */;
+			productReference = 4A78006A1F71C05F009BCC9E /* M365 Advisor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A78007D1F71C060009BCC9E /* IosGooglingTests */ = {
+		4A78007D1F71C060009BCC9E /* AdvisorAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A7800951F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGooglingTests" */;
+			buildConfigurationList = 4A7800951F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorAppTests" */;
 			buildPhases = (
 				4A78007A1F71C060009BCC9E /* Sources */,
 				4A78007B1F71C060009BCC9E /* Frameworks */,
@@ -233,14 +233,14 @@
 			dependencies = (
 				4A7800801F71C060009BCC9E /* PBXTargetDependency */,
 			);
-			name = IosGooglingTests;
+			name = AdvisorAppTests;
 			productName = IosGooglingTests;
-			productReference = 4A78007E1F71C060009BCC9E /* IosGooglingTests.xctest */;
+			productReference = 4A78007E1F71C060009BCC9E /* AdvisorAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4A7800881F71C060009BCC9E /* IosGooglingUITests */ = {
+		4A7800881F71C060009BCC9E /* AdvisorAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A7800981F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGooglingUITests" */;
+			buildConfigurationList = 4A7800981F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorAppUITests" */;
 			buildPhases = (
 				4A7800851F71C060009BCC9E /* Sources */,
 				4A7800861F71C060009BCC9E /* Frameworks */,
@@ -251,9 +251,9 @@
 			dependencies = (
 				4A78008B1F71C060009BCC9E /* PBXTargetDependency */,
 			);
-			name = IosGooglingUITests;
+			name = AdvisorAppUITests;
 			productName = IosGooglingUITests;
-			productReference = 4A7800891F71C060009BCC9E /* IosGooglingUITests.xctest */;
+			productReference = 4A7800891F71C060009BCC9E /* AdvisorAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A7800651F71C05F009BCC9E /* Build configuration list for PBXProject "IosGoogling" */;
+			buildConfigurationList = 4A7800651F71C05F009BCC9E /* Build configuration list for PBXProject "AdvisorApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -301,9 +301,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				4A7800691F71C05F009BCC9E /* IosGoogling */,
-				4A78007D1F71C060009BCC9E /* IosGooglingTests */,
-				4A7800881F71C060009BCC9E /* IosGooglingUITests */,
+				4A7800691F71C05F009BCC9E /* AdvisorApp */,
+				4A78007D1F71C060009BCC9E /* AdvisorAppTests */,
+				4A7800881F71C060009BCC9E /* AdvisorAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -401,12 +401,12 @@
 		};
 		4A7800801F71C060009BCC9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A7800691F71C05F009BCC9E /* IosGoogling */;
+			target = 4A7800691F71C05F009BCC9E /* AdvisorApp */;
 			targetProxy = 4A78007F1F71C060009BCC9E /* PBXContainerItemProxy */;
 		};
 		4A78008B1F71C060009BCC9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A7800691F71C05F009BCC9E /* IosGoogling */;
+			target = 4A7800691F71C05F009BCC9E /* AdvisorApp */;
 			targetProxy = 4A78008A1F71C060009BCC9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -544,12 +544,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YTYK347V6;
-				INFOPLIST_FILE = IosGoogling/Info.plist;
+				INFOPLIST_FILE = AdvisorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullhead.IosGoogling;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = IosGoogling/BridgeHeader.h;
+				PRODUCT_NAME = "M365 Advisor";
+				SWIFT_OBJC_BRIDGING_HEADER = AdvisorApp/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxHandler/**";
@@ -562,12 +562,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YTYK347V6;
-				INFOPLIST_FILE = IosGoogling/Info.plist;
+				INFOPLIST_FILE = AdvisorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullhead.IosGoogling;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = IosGoogling/BridgeHeader.h;
+				PRODUCT_NAME = "M365 Advisor";
+				SWIFT_OBJC_BRIDGING_HEADER = AdvisorApp/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxHandler/**";
@@ -587,7 +587,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosGoogling.app/IosGoogling";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvisorApp.app/AdvisorApp";
 			};
 			name = Debug;
 		};
@@ -604,7 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosGoogling.app/IosGoogling";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvisorApp.app/AdvisorApp";
 			};
 			name = Release;
 		};
@@ -643,7 +643,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A7800651F71C05F009BCC9E /* Build configuration list for PBXProject "IosGoogling" */ = {
+		4A7800651F71C05F009BCC9E /* Build configuration list for PBXProject "AdvisorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7800901F71C060009BCC9E /* Debug */,
@@ -652,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A7800921F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGoogling" */ = {
+		4A7800921F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7800931F71C060009BCC9E /* Debug */,
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A7800951F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGooglingTests" */ = {
+		4A7800951F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7800961F71C060009BCC9E /* Debug */,
@@ -670,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A7800981F71C060009BCC9E /* Build configuration list for PBXNativeTarget "IosGooglingUITests" */ = {
+		4A7800981F71C060009BCC9E /* Build configuration list for PBXNativeTarget "AdvisorAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7800991F71C060009BCC9E /* Debug */,
