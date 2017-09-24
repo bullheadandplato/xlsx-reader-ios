@@ -44,13 +44,15 @@ class DataHandler {
     }
     
     //load data for second screen
-    public static func loadDetailData(title:String,completion:([String:String])->()){
+    public static func loadDetailData(title:String,completion:([String],[String])->()){
         if let dir=FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
             
             let outPath=dir.appendingPathComponent(CommonConstants.FILENAME);
             let spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
             let workSheet : BRAWorksheet=spreadsheet.workbook.worksheets?[0] as! BRAWorksheet;
-            var temp:[String:String]=[String():String()];
+            var temp:[String]=[String()];
+            var temp1:[String]=[String()];
+
             var innerCalled=false
             for row in workSheet.rows as! [BRARow]{
                 let capability:BRACell=row.cells?[1] as! BRACell
@@ -69,16 +71,19 @@ class DataHandler {
                             let e3=innerRow.cells?[2] as! BRACell
                             let e5=innerRow.cells?[3] as! BRACell
                             var description=""
-                            if(e3.stringValue() != nil){
+                            if(e3.stringValue()! != ""){
                                 description=e3.stringValue()+" and "+e5.stringValue()
                             }else{
                                 description=e5.stringValue()
                             }
-                            temp.updateValue(description, forKey: nameCell.stringValue()!)
+                            temp+=[nameCell.stringValue()!]
+                            temp1+=[description]
                         }
                     }
                     if(innerCalled){
-                        completion(temp)
+                        temp.remove(at: 0)
+                        temp1.remove(at: 0)
+                        completion(temp,temp1)
                         break
                     }
                 }
