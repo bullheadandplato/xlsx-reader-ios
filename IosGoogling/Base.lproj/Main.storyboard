@@ -143,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="Yub-Me-0zg" customClass="DetailTableCell" customModule="IosGoogling" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDetailCell" rowHeight="50" id="Yub-Me-0zg" customClass="DetailTableCell" customModule="IosGoogling" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yub-Me-0zg" id="the-QO-AE3">
@@ -195,7 +195,6 @@
                                 <connections>
                                     <outlet property="detailDescription" destination="btx-FP-iD1" id="ui8-wh-cSV"/>
                                     <outlet property="detailTitle" destination="Ggd-HK-EE7" id="U3N-Ip-dTr"/>
-                                    <outlet property="title" destination="Ggd-HK-EE7" id="t0E-OH-V7m"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
