@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
-                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="separatorColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="5xa-KX-nCC" customClass="HomeTableCell" customModule="IosGoogling" customModuleProvider="target">
@@ -83,35 +83,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdL-Fx-0W8">
-                                            <rect key="frame" x="8" y="0.0" width="375" height="49.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jdL-Fx-0W8">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="49.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXJ-1s-gen">
-                                                    <rect key="frame" x="0.0" y="0.0" width="305" height="49.5"/>
-                                                    <color key="backgroundColor" red="0.5878699422" green="0.81248700620000003" blue="0.59000819920000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="0.0" y="14.5" width="42" height="20.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_navigate_next" translatesAutoresizingMaskIntoConstraints="NO" id="874-bM-bvU">
-                                                    <rect key="frame" x="305" y="0.0" width="70" height="49.5"/>
-                                                    <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="874-bM-bvU">
+                                                    <rect key="frame" x="329" y="10" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="feE-kU-rgr"/>
+                                                        <constraint firstAttribute="height" constant="30" id="1Aw-SW-sOd"/>
+                                                        <constraint firstAttribute="width" constant="30" id="4z5-U2-POZ"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="UXJ-1s-gen" firstAttribute="centerY" secondItem="jdL-Fx-0W8" secondAttribute="centerY" id="4fw-Rc-GK0"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="centerY" secondItem="m36-Hm-wk3" secondAttribute="centerY" id="5JX-Nd-dU7"/>
-                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="leading" secondItem="m36-Hm-wk3" secondAttribute="leadingMargin" id="C8P-io-Wmn"/>
-                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="width" secondItem="m36-Hm-wk3" secondAttribute="width" id="Cam-N8-xLM"/>
-                                        <constraint firstItem="874-bM-bvU" firstAttribute="height" secondItem="m36-Hm-wk3" secondAttribute="height" id="vhr-ee-gqJ"/>
+                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="top" secondItem="m36-Hm-wk3" secondAttribute="top" id="Bc1-9q-Xee"/>
+                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="leading" secondItem="m36-Hm-wk3" secondAttribute="leadingMargin" id="Tx4-7G-TT5"/>
+                                        <constraint firstItem="jdL-Fx-0W8" firstAttribute="height" secondItem="m36-Hm-wk3" secondAttribute="height" id="bXV-EG-T2i"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jdL-Fx-0W8" secondAttribute="trailing" id="dxj-H2-T9b"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.5878699422" green="0.81248700620000003" blue="0.59000819920000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="title" destination="UXJ-1s-gen" id="7ZX-Nz-0r1"/>
                                 </connections>
@@ -146,6 +151,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_navigate_next" width="24" height="24"/>
+        <image name="next_icon" width="50" height="50"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 class HomeTableViewController: UITableViewController {
-    private var meals=["Hello"];
+    private var meals=[String()];
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
@@ -23,7 +23,7 @@ class HomeTableViewController: UITableViewController {
         }
         let title=meals[indexPath.item];
         cell.title.text=title
-        tableView.rowHeight=70;    
+        tableView.rowHeight=70;
         return cell;
     }
     public func setData(values:[String]){

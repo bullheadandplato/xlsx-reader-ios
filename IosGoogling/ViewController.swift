@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var homeData=[String()]
     override func viewDidLoad() {
         super.viewDidLoad()
-        //  Just create your alert as usual:
+        //  show loading indicator
         let alert: UIAlertView = UIAlertView(title: "Loading Data", message: "Please wait...", delegate: nil, cancelButtonTitle: nil);
         
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x:50,y: 10,width: 37,height: 37)) as UIActivityIndicatorView
@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         loadingIndicator.startAnimating()
         
         alert.show();
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //load data
         DataHandler.loadData(completion:{response in
             self.homeData=response
             DispatchQueue.main.async {
