@@ -68,11 +68,13 @@
         <scene sceneID="5YU-uB-oAV">
             <objects>
                 <tableViewController id="TQ5-15-8vU" customClass="HomeTableViewController" customModule="IosGoogling" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BBC-ga-LTe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BBC-ga-LTe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="50" id="5xa-KX-nCC" customClass="HomeTableCell" customModule="IosGoogling" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
@@ -115,6 +117,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="TQ5-15-8vU" id="Uq5-Hn-cMW"/>
                             <outlet property="delegate" destination="TQ5-15-8vU" id="pr3-WM-7Qt"/>
