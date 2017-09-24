@@ -51,6 +51,7 @@ class DataHandler {
             let spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
             let workSheet : BRAWorksheet=spreadsheet.workbook.worksheets?[0] as! BRAWorksheet;
             var data:Array<CellModel>=Array()
+            
 
             var innerCalled=false
             for row in workSheet.rows as! [BRARow]{
@@ -59,38 +60,34 @@ class DataHandler {
            
                 if (val==title){
                     let rowIndex=capability.rowIndex()
-                    for i in rowIndex...workSheet.rows.count{
+                    var count=0;
+                    print("row index: \(rowIndex)")
+                    for i in rowIndex...workSheet.rows.count-1{
+                        print("row in loop")
                         let innerRow=workSheet.rows?[i] as! BRARow
                         let typeCell=innerRow.cells?[0] as! BRACell
                         innerCalled=true
-                        if(typeCell.stringValue()=="C"){
+                        if(typeCell.stringValue()=="C" && count != 0){
                             break
                         }else{
-                           /* let nameCell=innerRow.cells?[1] as! BRACell
-                            let e3=innerRow.cellF as! BRACell
-                            let e5=innerRow.cells?[3] as! BRACell
-                            var description=""
-                            if(e3.stringValue()! != ""){
-                                description=e3.stringValue()+" and "+e5.stringValue()
-                            }else{
-                                description=e5.stringValue()
-                            }*/
-                            let name=workSheet.cell(forCellReference: "B\(i)").stringValue()!
+                           print("row adding something")
+                            count=count+1
+                            let name=workSheet.cell(forCellReference: "B\(i+1)").stringValue()!
                             var url=""
                             var e3=""
                             var e5=""
                             var description="no description provided."
-                            if(workSheet.cell(forCellReference: "J\(i)") != nil){
-                                url=workSheet.cell(forCellReference: "J\(i)").stringValue()
+                            if(workSheet.cell(forCellReference: "J\(i+1)") != nil){
+                                url=workSheet.cell(forCellReference: "J\(i+1)").stringValue()
                             }
-                            if(workSheet.cell(forCellReference: "C\(i)") != nil){
-                                e3=workSheet.cell(forCellReference: "C\(i)").stringValue()
+                            if(workSheet.cell(forCellReference: "C\(i+1)") != nil){
+                                e3=workSheet.cell(forCellReference: "C\(i+1)").stringValue()
                             }
-                            if(workSheet.cell(forCellReference: "D\(i)") != nil){
-                                e5=workSheet.cell(forCellReference: "D\(i)").stringValue()!
+                            if(workSheet.cell(forCellReference: "D\(i+1)") != nil){
+                                e5=workSheet.cell(forCellReference: "D\(i+1)").stringValue()!
                             }
-                            if(workSheet.cell(forCellReference: "E\(i)") != nil){
-                                description=workSheet.cell(forCellReference: "E\(i)").stringValue()!
+                            if(workSheet.cell(forCellReference: "E\(i+1)") != nil){
+                                description=workSheet.cell(forCellReference: "E\(i+1)").stringValue()!
                             }
                             var ees=""
                             if(e3 != ""){
@@ -104,7 +101,7 @@ class DataHandler {
                         }
                     }
                     if(innerCalled){
-                        data.remove(at: 0)
+                       // data.remove(at: 0)
                         completion(data)
                         break
                     }
