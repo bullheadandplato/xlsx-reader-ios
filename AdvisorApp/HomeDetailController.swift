@@ -9,14 +9,12 @@
 import UIKit
 class HomeDetailController: UITableViewController {
     private var detailTitle: String?;
-    private var names=[String()]
-    private var descriptions=[String()]
+    private var data:[CellModel]?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title=detailTitle
-        DataHandler.loadDetailData(title: detailTitle!) { response1,response2 in
-            self.names=response1
-            self.descriptions=response2
+        DataHandler.loadDetailData(title: detailTitle!) { response2 in
+            self.data=response2
             self.tableView.reloadData()
         }
     }
@@ -27,7 +25,7 @@ class HomeDetailController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return data!.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -35,11 +33,12 @@ class HomeDetailController: UITableViewController {
         guard let cell=tableView.dequeueReusableCell(withIdentifier: cellId,for:indexPath) as? DetailTableCell else{
             fatalError("Should be of type Home")
         }
-        if names.count==0 {
+        if data!.count==0 {
             return cell
         }
-        cell.detailTitle.text=names[indexPath.item]
-        cell.detailDescription.text=descriptions[indexPath.item]
+        let cellModel=data![indexPath.item]
+        cell.detailTitle.text=cellModel.getTitle()
+        cell.detailDescription.text=cellModel.getEes()
         tableView.rowHeight=70
         return cell
     

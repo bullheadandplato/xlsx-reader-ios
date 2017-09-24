@@ -44,14 +44,13 @@ class DataHandler {
     }
     
     //load data for second screen
-    public static func loadDetailData(title:String,completion:([String],[String])->()){
+    public static func loadDetailData(title:String,completion:([CellModel])->()){
         if let dir=FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
             
             let outPath=dir.appendingPathComponent(CommonConstants.FILENAME);
             let spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
             let workSheet : BRAWorksheet=spreadsheet.workbook.worksheets?[0] as! BRAWorksheet;
-            var temp:[String]=[String()];
-            var temp1:[String]=[String()];
+            var data:Array<CellModel>=Array()
 
             var innerCalled=false
             for row in workSheet.rows as! [BRARow]{
@@ -67,23 +66,37 @@ class DataHandler {
                         if(typeCell.stringValue()=="C"){
                             break
                         }else{
-                            let nameCell=innerRow.cells?[1] as! BRACell
-                            let e3=innerRow.cells?[2] as! BRACell
+                           /* let nameCell=innerRow.cells?[1] as! BRACell
+                            let e3=innerRow.cellF as! BRACell
                             let e5=innerRow.cells?[3] as! BRACell
                             var description=""
                             if(e3.stringValue()! != ""){
                                 description=e3.stringValue()+" and "+e5.stringValue()
                             }else{
                                 description=e5.stringValue()
+                            }*/
+                            let name=workSheet.cell(forCellReference: "B\(i)").stringValue()!
+                            var url=""
+                            if(workSheet.cell(forCellReference: "J\(i)") != nil){
+                            url=workSheet.cell(forCellReference: "J\(i)").stringValue()
                             }
-                            temp+=[nameCell.stringValue()!]
-                            temp1+=[description]
+                            let e3=workSheet.cell(forCellReference: "C\(i)").stringValue()!
+                            let e5=workSheet.cell(forCellReference: "D\(i)").stringValue()!
+                            let description=workSheet.cell(forCellReference: "E\(i)").stringValue()!
+                            var ees=""
+                            if(e3 != ""){
+                                ees=e3+" and "+e5;
+                            }else{
+                                ees=e5
+                            }
+                            let cellModel=CellModel.init(title: name, url:url ?? "" , description: description, ees: ees)
+                        
+                            data.insert(cellModel, at: data.count)
                         }
                     }
                     if(innerCalled){
-                        temp.remove(at: 0)
-                        temp1.remove(at: 0)
-                        completion(temp,temp1)
+                        data.remove(at: 0)
+                        completion(data)
                         break
                     }
                 }
@@ -91,8 +104,7 @@ class DataHandler {
             }
         }
     }
-    
-    
+
 
 class Downloader {
     class func load(url: URL, to localUrl: URL, completion: @escaping () -> ()) {
