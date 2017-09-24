@@ -43,4 +43,14 @@ class HomeDetailController: UITableViewController {
         return cell
     
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let index=tableView.indexPathForSelectedRow {
+            let selectedTitle=data![index.row]
+            guard let detailController=segue.destination as? DetailViewController else{
+                fatalError("Not a detail controller")
+            }
+            detailController.setData(model: selectedTitle)
+            
+        }
+    }
 }
