@@ -200,7 +200,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vs4-pg-kqX">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vs4-pg-kqX" userLabel="next_world">
                                                     <rect key="frame" x="329" y="10" width="30" height="30"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -224,6 +224,7 @@
                                 <connections>
                                     <outlet property="detailDescription" destination="btx-FP-iD1" id="ui8-wh-cSV"/>
                                     <outlet property="detailTitle" destination="Ggd-HK-EE7" id="U3N-Ip-dTr"/>
+                                    <outlet property="moveNextImage" destination="vs4-pg-kqX" id="HwL-0q-D8r"/>
                                     <segue destination="iX5-3g-YYd" kind="show" id="wbr-X6-vSx"/>
                                 </connections>
                             </tableViewCell>

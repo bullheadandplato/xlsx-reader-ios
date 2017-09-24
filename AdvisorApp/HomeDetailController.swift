@@ -39,6 +39,10 @@ class HomeDetailController: UITableViewController {
         let cellModel=data![indexPath.item]
         cell.detailTitle.text=cellModel.getTitle()
         cell.detailDescription.text=cellModel.getEes()
+        let image=#imageLiteral(resourceName: "next_icon")
+        
+        cell.moveNextImage.image=image
+        cell.moveNextImage.tintColor=#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
         tableView.rowHeight=70
         return cell
     
