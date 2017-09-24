@@ -27,13 +27,16 @@ class DataHandler {
                 let spreadsheet: BRAOfficeDocumentPackage = BRAOfficeDocumentPackage.open(outPath.path)
                 let workSheet : BRAWorksheet=spreadsheet.workbook.worksheets?[0] as! BRAWorksheet;
                 var temp:[String]=[String()];
+                
                 for row in workSheet.rows as! [BRARow]{
                     let cell:BRACell=row.cells?[0] as! BRACell
                     if(cell.stringValue()=="C"){
                         let cell1:BRACell=row.cells?[1] as! BRACell
-                        temp.append(cell1.stringValue())
+                        temp+=[cell1.stringValue()]
+                        
                     }
                 }
+                temp.remove(at: 0)
                 completion(temp)
                 
             })

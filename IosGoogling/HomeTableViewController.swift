@@ -27,6 +27,7 @@ class HomeTableViewController: UITableViewController {
         return cell;
     }
     public func setData(values:[String]){
+        
         self.meals=values
         self.tableView.reloadData()
     }
