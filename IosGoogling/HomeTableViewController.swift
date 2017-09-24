@@ -31,5 +31,12 @@ class HomeTableViewController: UITableViewController {
         self.meals=values
         self.tableView.reloadData()
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let index=tableView.indexPathForSelectedRow {
+            let selectedTitle=meals[index.row]
+            let detailController=segue.destination as? HomeDetailController
+            print("title is: \(selectedTitle)")
+            detailController?.setTitle(title: selectedTitle)
+        }
+    }
 }
