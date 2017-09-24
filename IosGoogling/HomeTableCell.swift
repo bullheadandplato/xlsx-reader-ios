@@ -9,6 +9,6 @@
 import UIKit
 class HomeTableCell : UITableViewCell{
 
-    @IBOutlet weak var helloWorld: UIImageView!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var nextIcon: UIImageView!
 }

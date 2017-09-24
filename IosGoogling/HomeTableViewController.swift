@@ -23,6 +23,10 @@ class HomeTableViewController: UITableViewController {
         }
         let title=meals[indexPath.item];
         cell.title.text=title
+        let image=#imageLiteral(resourceName: "next_icon")
+    
+        cell.nextIcon.image=image
+        cell.nextIcon.tintColor=#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
         tableView.rowHeight=70;
         return cell;
     }

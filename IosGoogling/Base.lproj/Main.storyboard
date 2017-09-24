@@ -118,6 +118,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="nextIcon" destination="874-bM-bvU" id="FPJ-uQ-8tJ"/>
                                     <outlet property="title" destination="UXJ-1s-gen" id="7ZX-Nz-0r1"/>
                                     <segue destination="eTT-dh-vVB" kind="show" id="SzO-4Y-647"/>
                                 </connections>
