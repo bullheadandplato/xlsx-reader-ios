@@ -61,16 +61,13 @@ class DataHandler {
                 if (val==title){
                     let rowIndex=capability.rowIndex()
                     var count=0;
-                    print("row index: \(rowIndex)")
                     for i in rowIndex...workSheet.rows.count-1{
-                        print("row in loop")
                         let innerRow=workSheet.rows?[i] as! BRARow
                         let typeCell=innerRow.cells?[0] as! BRACell
                         innerCalled=true
                         if(typeCell.stringValue()=="C" && count != 0){
                             break
                         }else{
-                           print("row adding something")
                             count=count+1
                             let name=workSheet.cell(forCellReference: "B\(i+1)").stringValue()!
                             var url=""
