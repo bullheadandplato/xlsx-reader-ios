@@ -16,6 +16,9 @@ class DetailViewController : UIViewController{
         override func viewDidLoad() {
         super.viewDidLoad()
             self.title!=dataModel!.getTitle()
+            descriptionLabel.lineBreakMode = .byWordWrapping
+            descriptionLabel.numberOfLines  = 0
+            descriptionLabel.text=dataModel?.getDescription()
         
     }
     
