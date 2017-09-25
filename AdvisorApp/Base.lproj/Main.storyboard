@@ -150,10 +150,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4on-uN-HcI">
+                                <rect key="frame" x="154.5" y="497" width="65" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Resource"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lhN-Xq-coX" firstAttribute="trailing" secondItem="7gj-Vy-NWI" secondAttribute="trailingMargin" id="VVt-ug-bd5"/>
+                            <constraint firstItem="4on-uN-HcI" firstAttribute="centerX" secondItem="lhN-Xq-coX" secondAttribute="centerX" id="XwL-aX-W5O"/>
+                            <constraint firstItem="Usv-r8-JgF" firstAttribute="bottom" secondItem="4on-uN-HcI" secondAttribute="bottom" constant="20" id="qPH-vn-TYu"/>
                             <constraint firstItem="lhN-Xq-coX" firstAttribute="leading" secondItem="7gj-Vy-NWI" secondAttribute="leadingMargin" id="uPg-0I-IgY"/>
                             <constraint firstItem="lhN-Xq-coX" firstAttribute="top" secondItem="Usv-r8-JgF" secondAttribute="top" id="z1N-9l-xle"/>
                         </constraints>
@@ -161,6 +168,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="lhN-Xq-coX" id="CPk-CR-zOX"/>
+                        <outlet property="resourceButton" destination="4on-uN-HcI" id="hSG-R8-pNk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTd-jQ-e6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
