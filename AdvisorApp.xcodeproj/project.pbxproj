@@ -24,6 +24,7 @@
 		4A78008E1F71C060009BCC9E /* IosGooglingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78008D1F71C060009BCC9E /* IosGooglingUITests.swift */; };
 		4A92026D1F7548770043BF73 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92026C1F7548770043BF73 /* HomeTableCell.swift */; };
 		4A92026F1F754FF60043BF73 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92026E1F754FF60043BF73 /* HomeTableViewController.swift */; };
+		4AC9A85B1F78DB200069AFF3 /* ResourceControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9A85A1F78DB200069AFF3 /* ResourceControllerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		4A78008F1F71C060009BCC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A92026C1F7548770043BF73 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 		4A92026E1F754FF60043BF73 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		4AC9A85A1F78DB200069AFF3 /* ResourceControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceControllerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				4A5281E41F779F8900414DC5 /* DetailTableCell.swift */,
 				4A5281EA1F78073800414DC5 /* DetailViewController.swift */,
 				4A5281EC1F7815C500414DC5 /* CellModel.swift */,
+				4AC9A85A1F78DB200069AFF3 /* ResourceControllerView.swift */,
 			);
 			path = AdvisorApp;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				4A5281E51F779F8900414DC5 /* DetailTableCell.swift in Sources */,
 				4A78006E1F71C05F009BCC9E /* AppDelegate.swift in Sources */,
 				4A92026D1F7548770043BF73 /* HomeTableCell.swift in Sources */,
+				4AC9A85B1F78DB200069AFF3 /* ResourceControllerView.swift in Sources */,
 				4A20AB3A1F76401D00A4757D /* CommonConstants.swift in Sources */,
 				4A20AB381F76359E00A4757D /* DataHandler.swift in Sources */,
 			);

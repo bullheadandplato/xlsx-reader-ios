@@ -154,6 +154,9 @@
                                 <rect key="frame" x="154.5" y="497" width="65" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Resource"/>
+                                <connections>
+                                    <segue destination="nqZ-my-dKE" kind="show" id="utK-wk-mDU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -174,6 +177,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTd-jQ-e6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1621.5999999999999" y="181.25937031484258"/>
+        </scene>
+        <!--Resource Controller View-->
+        <scene sceneID="gkp-We-bmn">
+            <objects>
+                <viewController id="nqZ-my-dKE" customClass="ResourceControllerView" customModule="M365_Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Cw-OS-Jjt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="SDL-R0-gXL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh7-MW-Wgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="196.55172413793105"/>
         </scene>
         <!--Home Detail Controller-->
         <scene sceneID="hlM-7d-cew">
