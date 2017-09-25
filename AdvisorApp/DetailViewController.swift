@@ -21,7 +21,12 @@ class DetailViewController : UIViewController{
             descriptionLabel.lineBreakMode = .byWordWrapping
             descriptionLabel.numberOfLines  = 0
             descriptionLabel.text=dataModel?.getDescription()
-        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextViewController=segue.destination as? ResourceControllerView else {
+            fatalError("must be of type ResouceViewController")
+        }
+        nextViewController.setUrl(url: (dataModel?.getUrl())!)
     }
     
 }
