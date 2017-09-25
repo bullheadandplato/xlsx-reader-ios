@@ -59,6 +59,7 @@
                     <navigationItem key="navigationItem" title="Microsoft M365 Advisor" id="Nb2-Sb-PaE"/>
                     <connections>
                         <outlet property="containerView" destination="dFF-t8-P1p" id="JH2-8U-NUD"/>
+                        <outlet property="searchBar" destination="6SA-5a-vMP" id="YD4-KS-BqH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
